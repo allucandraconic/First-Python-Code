@@ -1,0 +1,46 @@
+This is the first code in python that I'm sharing and I hope it helps you, because sometimes I have problems installing extensions in pycharm or vscode community, so I created this DEF to serve as an "extension", first, copy and paste the code into the IDE desired, then save it in the same folder as a new project and then just use import.
+
+Number Comparison Program
+
+This Python script provides a simple number comparison functionality, allowing users to input two numbers and compare them. The program includes basic conditional statements to check if the first number is less than, greater than, or equal to the second number. It utilizes a while loop to enable users to continue entering numbers if desired.
+
+Usage:
+
+Run the script.
+Enter the first and second numbers when prompted.
+Receive feedback on the relationships between the entered numbers.
+Choose to continue entering more numbers or exit the program.
+Feel free to use and modify this code according to your needs. It's a beginner-friendly example that demonstrates the use of loops and conditional statements in Python.
+
+def escolha():
+    while True:
+        # Pedindo ao usuário para fornecer dois números
+        numero1 = float(input("Digite o primeiro número: "))
+        numero2 = float(input("Digite o segundo número: "))
+
+        # Verificando se numero1 é menor que numero2
+        if numero1 < numero2:
+            print(f"{numero1} é menor que {numero2}")
+        else:
+            print(f"{numero1} não é menor que {numero2}")
+
+        # Verificando se numero2 é maior que numero1
+        if numero2 > numero1:
+            print(f"{numero2} é maior que {numero1}")
+        else:
+            print(f"{numero2} não é maior que {numero1}")
+
+        # Verificando se numero1 é igual a numero2
+        if numero1 == numero2:
+            print(f"{numero1} é igual a {numero2}")
+        else:
+            print(f"{numero1} não é igual a {numero2}")
+
+        # Perguntar ao usuário se deseja continuar
+        continuar = input("Deseja digitar mais números? (sim/não): ")
+        if continuar.lower() != "sim":
+            break  # Sai do loop se a resposta não for "sim"
+
+# Chame a função escolha
+escolha()
+
